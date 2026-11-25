@@ -1,0 +1,129 @@
+{
+  "id": "photosynthesis",
+  "source_text": "Photosynthesis\n\nPhotosynthesis is the process by which green plants use light energy to make glucose from carbon dioxide and water. Oxygen is released as a by-product. The overall equation is 6CO2 + 6H2O + light energy gives C6H12O6 + 6O2. Photosynthesis takes place mainly in the leaves, inside organelles called chloroplasts.\n\nChloroplasts contain a green pigment called chlorophyll. Chlorophyll absorbs mostly red and blue light and reflects green light, which is why leaves look green. Inside the chloroplast, stacks of membrane discs called thylakoids hold the chlorophyll. The fluid around the thylakoids is called the stroma.\n\nPhotosynthesis happens in two stages. The light-dependent reactions take place in the thylakoid membranes. In these reactions, water is split and oxygen is released. The light-dependent reactions produce ATP and NADPH. The light-independent reactions, also called the Calvin cycle, take place in the stroma. The Calvin cycle uses ATP and NADPH to fix carbon dioxide into glucose. The enzyme RuBisCO captures carbon dioxide in the Calvin cycle.\n\nThe rate of photosynthesis depends on limiting factors. The main limiting factors are light intensity, carbon dioxide concentration and temperature. Increasing light intensity raises the rate only until another factor becomes limiting. Very high temperatures reduce the rate because enzymes start to denature. Carbon dioxide enters the leaf through tiny pores called stomata. Guard cells open and close the stomata.",
+  "raw": {
+    "title": "The Chlorophyll Crypt",
+    "subject": "Photosynthesis",
+    "concepts": [
+      {
+        "name": "The Big Picture",
+        "summary": "Plants turn CO2 and water into glucose using light, releasing oxygen.",
+        "difficulty": 1,
+        "questions": [
+          {
+            "prompt": "Which gas is released as a by-product of photosynthesis?",
+            "choices": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+            "answer_index": 0,
+            "explanation": "Plants take in CO2 and give out O2.",
+            "source_quote": "Oxygen is released as a by-product."
+          },
+          {
+            "prompt": "What are the raw materials plants use to make glucose?",
+            "choices": ["Carbon dioxide and water", "Oxygen and water", "Glucose and oxygen", "Nitrogen and carbon dioxide"],
+            "answer_index": 0,
+            "explanation": "CO2 and H2O go in; glucose and O2 come out.",
+            "source_quote": "Photosynthesis is the process by which green plants use light energy to make glucose from carbon dioxide and water."
+          },
+          {
+            "prompt": "Where in the leaf cell does photosynthesis mainly happen?",
+            "choices": ["Chloroplasts", "Mitochondria", "Nucleus", "Cell wall"],
+            "answer_index": 0,
+            "explanation": "Chloroplasts hold the chlorophyll that captures light.",
+            "source_quote": "Photosynthesis takes place mainly in the leaves, inside organelles called chloroplasts."
+          }
+        ]
+      },
+      {
+        "name": "Chlorophyll & Chloroplasts",
+        "summary": "The green pigment and the structures that hold it.",
+        "difficulty": 1,
+        "questions": [
+          {
+            "prompt": "Why do leaves look green?",
+            "choices": ["Chlorophyll reflects green light", "Chlorophyll absorbs green light", "Stomata are green", "Glucose is green"],
+            "answer_index": 0,
+            "explanation": "We see the colour that is reflected, not absorbed.",
+            "source_quote": "Chlorophyll absorbs mostly red and blue light and reflects green light, which is why leaves look green."
+          },
+          {
+            "prompt": "What are the stacked membrane discs inside a chloroplast called?",
+            "choices": ["Thylakoids", "Stroma", "Stomata", "Ribosomes"],
+            "answer_index": 0,
+            "explanation": "Thylakoids hold the chlorophyll; stroma is the fluid around them.",
+            "source_quote": "Inside the chloroplast, stacks of membrane discs called thylakoids hold the chlorophyll."
+          },
+          {
+            "prompt": "What is the fluid around the thylakoids called?",
+            "choices": ["Stroma", "Cytoplasm", "Chlorophyll", "Guard fluid"],
+            "answer_index": 0,
+            "explanation": "The stroma is where the Calvin cycle happens.",
+            "source_quote": "The fluid around the thylakoids is called the stroma."
+          }
+        ]
+      },
+      {
+        "name": "Two Stages",
+        "summary": "Light-dependent reactions make ATP/NADPH; the Calvin cycle uses them to fix CO2.",
+        "difficulty": 3,
+        "questions": [
+          {
+            "prompt": "Where do the light-dependent reactions take place?",
+            "choices": ["Thylakoid membranes", "Stroma", "Mitochondria", "Stomata"],
+            "answer_index": 0,
+            "explanation": "Light hits chlorophyll in the thylakoid membranes.",
+            "source_quote": "The light-dependent reactions take place in the thylakoid membranes."
+          },
+          {
+            "prompt": "The Calvin cycle uses which products of the light-dependent reactions?",
+            "choices": ["ATP and NADPH", "Oxygen and water", "Glucose and oxygen", "Chlorophyll and RuBisCO"],
+            "answer_index": 0,
+            "explanation": "Stage 1 makes the energy carriers; stage 2 spends them.",
+            "source_quote": "The Calvin cycle uses ATP and NADPH to fix carbon dioxide into glucose."
+          },
+          {
+            "prompt": "In which stage is water split?",
+            "choices": ["Light-dependent reactions", "Calvin cycle", "Both stages", "Neither stage"],
+            "answer_index": 0,
+            "explanation": "Splitting water is where the released oxygen comes from.",
+            "source_quote": "In these reactions, water is split and oxygen is released."
+          },
+          {
+            "prompt": "Which enzyme captures carbon dioxide in the Calvin cycle?",
+            "choices": ["RuBisCO", "Amylase", "ATP synthase", "Chlorophyll"],
+            "answer_index": 0,
+            "explanation": "RuBisCO grabs CO2 so it can be built into sugar.",
+            "source_quote": "The enzyme RuBisCO captures carbon dioxide in the Calvin cycle."
+          }
+        ]
+      },
+      {
+        "name": "Limiting Factors",
+        "summary": "Light, CO2 and temperature control how fast photosynthesis runs.",
+        "difficulty": 2,
+        "questions": [
+          {
+            "prompt": "Why does a very high temperature reduce the rate of photosynthesis?",
+            "choices": ["Enzymes start to denature", "Chlorophyll turns red", "Stomata absorb too much light", "Water stops being split forever"],
+            "answer_index": 0,
+            "explanation": "Enzymes like RuBisCO lose their shape when too hot.",
+            "source_quote": "Very high temperatures reduce the rate because enzymes start to denature."
+          },
+          {
+            "prompt": "You keep increasing light intensity. What happens to the rate?",
+            "choices": ["It rises until another factor becomes limiting", "It rises forever", "It drops immediately", "It does not change at all"],
+            "answer_index": 0,
+            "explanation": "After a point, CO2 or temperature holds it back.",
+            "source_quote": "Increasing light intensity raises the rate only until another factor becomes limiting."
+          },
+          {
+            "prompt": "How does carbon dioxide get into the leaf?",
+            "choices": ["Through stomata", "Through the roots", "Through chloroplasts directly", "Through the stroma"],
+            "answer_index": 0,
+            "explanation": "Stomata are tiny pores, opened and closed by guard cells.",
+            "source_quote": "Carbon dioxide enters the leaf through tiny pores called stomata."
+          }
+        ]
+      }
+    ]
+  }
+}

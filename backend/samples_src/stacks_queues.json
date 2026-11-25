@@ -1,0 +1,150 @@
+{
+  "id": "stacks-queues",
+  "source_text": "Stacks and Queues\n\nA stack is a linear data structure that follows the Last In, First Out (LIFO) principle. The element added most recently is the first one to be removed. The two main operations of a stack are push, which adds an element to the top, and pop, which removes the element from the top. The peek operation returns the top element without removing it. Trying to pop from an empty stack causes a stack underflow. Trying to push onto a full fixed-size stack causes a stack overflow.\n\nA queue is a linear data structure that follows the First In, First Out (FIFO) principle. The element added first is the first one to be removed. Enqueue adds an element at the rear of the queue. Dequeue removes an element from the front of the queue. A simple array-based queue wastes space because the front moves forward after every dequeue. A circular queue solves this by wrapping the rear index back to the start of the array using the modulo operator.\n\nIn a well-implemented stack or queue, push, pop, enqueue and dequeue all run in O(1) time. Stacks can be implemented with an array or a linked list. A queue implemented with a linked list keeps pointers to both the head and the tail.\n\nStacks are used for function calls, undo features and checking balanced parentheses. The call stack stores a frame for every active function call. Breadth-first search uses a queue to visit nodes level by level. Depth-first search can be implemented using a stack. A deque, or double-ended queue, allows insertion and deletion at both ends. A priority queue removes the element with the highest priority first, not the oldest one.",
+  "raw": {
+    "title": "The LIFO Labyrinth",
+    "subject": "Stacks and Queues",
+    "concepts": [
+      {
+        "name": "Stack Basics (LIFO)",
+        "summary": "A stack adds and removes from the same end: last in, first out.",
+        "difficulty": 1,
+        "questions": [
+          {
+            "prompt": "Which principle does a stack follow?",
+            "choices": ["Last In, First Out", "First In, First Out", "Highest priority first", "Random access"],
+            "answer_index": 0,
+            "explanation": "A stack removes the most recently added element first, so it is LIFO.",
+            "source_quote": "A stack is a linear data structure that follows the Last In, First Out (LIFO) principle."
+          },
+          {
+            "prompt": "What does the peek operation do on a stack?",
+            "choices": ["Returns the top element without removing it", "Removes the top element", "Removes the bottom element", "Adds an element to the top"],
+            "answer_index": 0,
+            "explanation": "Peek only looks at the top. Pop is the one that removes it.",
+            "source_quote": "The peek operation returns the top element without removing it."
+          },
+          {
+            "prompt": "You pop from an empty stack. What happens?",
+            "choices": ["Stack underflow", "Stack overflow", "It returns the bottom element", "The stack becomes a queue"],
+            "answer_index": 0,
+            "explanation": "Removing from nothing is an underflow. Overflow is pushing onto a full stack.",
+            "source_quote": "Trying to pop from an empty stack causes a stack underflow."
+          }
+        ]
+      },
+      {
+        "name": "Queue Basics (FIFO)",
+        "summary": "A queue adds at the rear and removes from the front: first in, first out.",
+        "difficulty": 1,
+        "questions": [
+          {
+            "prompt": "Where does enqueue add a new element?",
+            "choices": ["At the rear", "At the front", "In the middle", "At the top"],
+            "answer_index": 0,
+            "explanation": "New elements join the back of the line, like people in a queue.",
+            "source_quote": "Enqueue adds an element at the rear of the queue."
+          },
+          {
+            "prompt": "Which element leaves a queue first?",
+            "choices": ["The one added first", "The one added last", "The one with highest priority", "A random one"],
+            "answer_index": 0,
+            "explanation": "Queues are FIFO, so the oldest element is removed first.",
+            "source_quote": "The element added first is the first one to be removed."
+          },
+          {
+            "prompt": "Dequeue removes an element from which end?",
+            "choices": ["The front", "The rear", "Both ends", "The top"],
+            "answer_index": 0,
+            "explanation": "Dequeue takes from the front, enqueue adds at the rear.",
+            "source_quote": "Dequeue removes an element from the front of the queue."
+          }
+        ]
+      },
+      {
+        "name": "Implementation & Complexity",
+        "summary": "How stacks and queues are built and why their core operations are O(1).",
+        "difficulty": 2,
+        "questions": [
+          {
+            "prompt": "What is the time complexity of push and dequeue in a well-implemented stack or queue?",
+            "choices": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+            "answer_index": 0,
+            "explanation": "They only touch one end, so no loop over the elements is needed.",
+            "source_quote": "In a well-implemented stack or queue, push, pop, enqueue and dequeue all run in O(1) time."
+          },
+          {
+            "prompt": "Why does a simple array-based queue waste space?",
+            "choices": ["The front moves forward after every dequeue", "Arrays cannot store integers", "Enqueue copies the whole array", "The rear never moves"],
+            "answer_index": 0,
+            "explanation": "Slots before the front are left empty and never reused.",
+            "source_quote": "A simple array-based queue wastes space because the front moves forward after every dequeue."
+          },
+          {
+            "prompt": "A linked-list queue keeps pointers to which nodes?",
+            "choices": ["Both the head and the tail", "Only the head", "Only the tail", "Every middle node"],
+            "answer_index": 0,
+            "explanation": "Head for dequeue, tail for enqueue, so both stay O(1).",
+            "source_quote": "A queue implemented with a linked list keeps pointers to both the head and the tail."
+          }
+        ]
+      },
+      {
+        "name": "Circular Queues",
+        "summary": "Reusing freed array slots by wrapping indices around with modulo.",
+        "difficulty": 3,
+        "questions": [
+          {
+            "prompt": "What problem does a circular queue solve?",
+            "choices": ["Wasted space in an array-based queue", "Stack underflow", "Slow O(n) pop", "Priority ordering"],
+            "answer_index": 0,
+            "explanation": "By wrapping around, it reuses the empty slots before the front.",
+            "source_quote": "A circular queue solves this by wrapping the rear index back to the start of the array using the modulo operator."
+          },
+          {
+            "prompt": "Which operator lets the rear index wrap back to the start of the array?",
+            "choices": ["Modulo (%)", "Division (/)", "Bitwise OR (|)", "Exponent (^)"],
+            "answer_index": 0,
+            "explanation": "rear = (rear + 1) % size brings the index back to 0 after the last slot.",
+            "source_quote": "A circular queue solves this by wrapping the rear index back to the start of the array using the modulo operator."
+          }
+        ]
+      },
+      {
+        "name": "Real Uses & Variants",
+        "summary": "Call stacks, BFS/DFS, deques and priority queues.",
+        "difficulty": 3,
+        "questions": [
+          {
+            "prompt": "Breadth-first search visits nodes level by level using which structure?",
+            "choices": ["A queue", "A stack", "A priority queue", "A hash map"],
+            "answer_index": 0,
+            "explanation": "FIFO order makes BFS finish one level before moving to the next.",
+            "source_quote": "Breadth-first search uses a queue to visit nodes level by level."
+          },
+          {
+            "prompt": "What does the call stack store?",
+            "choices": ["A frame for every active function call", "Every variable ever declared", "The program's source code", "Only global variables"],
+            "answer_index": 0,
+            "explanation": "Each call pushes a frame; returning pops it.",
+            "source_quote": "The call stack stores a frame for every active function call."
+          },
+          {
+            "prompt": "How is a priority queue different from a normal queue?",
+            "choices": ["It removes the highest-priority element, not the oldest", "It removes the newest element first", "It allows insertion at both ends", "It has no remove operation"],
+            "answer_index": 0,
+            "explanation": "Order depends on priority, not on arrival time.",
+            "source_quote": "A priority queue removes the element with the highest priority first, not the oldest one."
+          },
+          {
+            "prompt": "Which structure allows insertion and deletion at both ends?",
+            "choices": ["Deque", "Stack", "Priority queue", "Circular stack"],
+            "answer_index": 0,
+            "explanation": "Deque = double-ended queue.",
+            "source_quote": "A deque, or double-ended queue, allows insertion and deletion at both ends."
+          }
+        ]
+      }
+    ]
+  }
+}
